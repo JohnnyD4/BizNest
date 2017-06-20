@@ -11,40 +11,44 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 
-<body>
-
+<body bgcolor="#ff3333">
+<div class="container">
 	<div class="entryPage">
 		<h1>BizNest</h1>
 		<div class="entryImage">
 			<img src="http://img.clipartall.com/beehive-clipart-23949-beehive-clipart-375_297.png">
 		</div>
-			<a id="signUp" href="#"><h2>Sign up</h2></a>
+			<a id="entrySignUp" href="#"><h2>Sign up</h2></a>
 			<h3>Already have an account? <a href="#">Log in</a></h3>
 		
 	</div>
+</div>
+
 	<div class="signUpPage">
 		<h1>Sign Up for BizNest</h1>
 		<div class="signUpDiv">
-			<form id="signUpForm">
+			<form id="signUpForm" method="post">
 				<input type="text" id="firstName" name="first" placeholder="First Name" required="required">
 				<input type="text" id="lastName" name="last" placeholder="LastName" required="required">
 
 				<input type="text" id="emailAddress" name="email" placeholder="Email Address" required="required">
 
-				<input type="text" id="password" name="pass" placeholder="Create Password" required="required">
-				<input type="text" id="repeatPassword" name="repeat" placeholder="Repeat Password" required="required">
+				<input type="password" id="password" name="pass" placeholder="Create Password" required="required">
+				<input type="password" id="repeatPassword" name="repeat" placeholder="Repeat Password" required="required">
 
-				<button id="buttonSignUp" type="submit" form="signUpForm" name="signUpButton" value="submit">Create Profile</button>
+				<button class="btn btn-primary" id="buttonSignUp" type="submit" form="signUpForm" name="signUpButton" value="submit">Create Profile</button>
 
 			</form>
 		</div>	
 	</div>
-
+</div>
 
 </body>
 </html>
