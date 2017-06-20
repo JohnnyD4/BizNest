@@ -27,8 +27,8 @@ body {
 
 .signUpDiv {
 	max-width: 600px;
-	border: 2px solid black;
-	margin: 10px auto;
+	background-color: darkgrey;
+	margin: 40px auto;
 	border-radius: 20px;
 	padding: 15px;
 
@@ -73,7 +73,7 @@ p {
 ul {
 	list-style: none;
 	margin-top: 20px !important;
-	padding-left: 0px;
+	padding-left: 10px;
 	float: left;
 }
 

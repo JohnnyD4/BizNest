@@ -1,3 +1,6 @@
+var userName;
+
+var storedName;
 
 $(document).ready(function() {
 
@@ -38,14 +41,27 @@ $(document).ready(function() {
 
 		var userPass = $("#password").val();
 
-		console.log(userFirst, " + ", userLast);
+		var verifyPass = $("#verifyPassword").val();
 
-  		console.log( $( this ).serialize(userFirst) );
+		userName = userFirst + " " + userLast;
+
+		storedName = localStorage.setItem('name', userName);
+
+		
+
+		console.log(userName);
+
+  		// console.log( $( userName ).serialize());
+
+  		location.href = "profile.html";
+
+  		$("profile.html#userName").html(userName)
 
 	});
 
 	function openHomePage() {
-		
+		$("#userName").html(userName);	
+		console.log(userName);	
 
 	}
 })
