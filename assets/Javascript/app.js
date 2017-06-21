@@ -45,9 +45,9 @@ $(document).ready(function() {
 
 		userName = userFirst + " " + userLast;
 
-		storedName = localStorage.setItem('name', userName);
+		localStorage.setItem('name', userName);
 
-		
+		storedName = localStorage.getItem(userName);
 
 		console.log(userName);
 
@@ -55,13 +55,25 @@ $(document).ready(function() {
 
   		location.href = "profile.html";
 
-  		$("profile.html#userName").html(userName)
+  		
 
 	});
 
 	function openHomePage() {
-		$("#userName").html(userName);	
+		$("#userName").html('name');	
 		console.log(userName);	
 
 	}
+
+	$("#hamburger").on("click", function() {
+		$("#mySideNav").css("width", "250px");
+	}) 
+
+	$("#closeNavBtn").on("click", function() {
+		$("#mySideNav").css("width", "0px");
+	})
+		
+	
+
+
 })

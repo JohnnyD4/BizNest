@@ -17,9 +17,21 @@
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 <body>
-<div class="navbar">
-	<h1>Profile</h1>
-</div>
+	<div class="navbar">
+		<span id="hamburger">&#9776;</span>
+		<h1>Profile</h1>
+	</div>
+
+	<div class="sideNav" id="mySideNav">
+		<a href="javascript:void(0)" id="closeNavBtn">&times;</a>
+		<input type="text" id="searchBar" placeholder="Search in Contacts">
+		<a href="#" class="userName sideStyle">John Davis</a>
+		<a href="#" class="sideStyle">Contacts</a>
+		<a href="#" class="sideStyle">Groups</a>
+		<a href="#" class="sideStyle">Add Friend</a>
+		<a href="#" class="sideStyle">Settings</a>
+	</div>
+
 	<div class="container profilePage">
 		<div class="row">
 			<div class="col-sm-4">
