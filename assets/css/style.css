@@ -113,7 +113,7 @@ ul {
 
 .sideNav a:hover, .offcanvas a:focus {
 	color: #f1f1f1;
-	background-color: darkgrey;
+	background-color: #2d2d2d;
 }
 
 .sideNav #closeBtn {
