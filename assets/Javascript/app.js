@@ -2,6 +2,8 @@ var userName;
 
 var storedName;
 
+var changeName;
+
 $(document).ready(function() {
 
 	$("#entrySignUp").on("click", function() {
@@ -74,6 +76,28 @@ $(document).ready(function() {
 	})
 		
 	
+	$(".profileInfo").on("click", ".edit", function() {
 
+		// $(".edit").hide();
+
+		changeName = $("<input type='text' id='editName'>");
+
+		$(".clientName").html(changeName);
+
+		var saveBtn = $("<button class='btn' id='saveData'>Save Changes</button>");
+
+		$(".editSave").html(saveBtn);
+
+	})
+
+	$(".profileInfo").on("click", "#saveData", function() {
+		
+		$(".editSave").html('<a id="editBtn" class="edit" href="#">Edit Profile</a>');
+
+
+		$(".clientName").html($("<h3 id='userName'>" + changeName.val() + "</h3>"));
+
+		$("#sideName").html(changeName.val());
+	})
 
 })

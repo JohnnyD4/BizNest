@@ -147,6 +147,11 @@ ul {
 	cursor: pointer;
 }
 
-
+#editName {
+	border: 1px solid #ff3333;
+	border-radius: 5px;
+	padding-left: 5px;
+	outline: none;
+}
 
 
